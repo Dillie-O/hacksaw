@@ -1,0 +1,34 @@
+v0.4
+* Initial Release.
+
+v0.5
+* Fixed bug when loading log files of 0 Kb size.
+* Added "open" filter option to filter log entries.
+* Added ability to change order of folder/log nodes.
+* Changed subtitle on manage log sources page to read "Log4Net" instead of "Log4J".
+
+v0.6
+* Incorporated AJAX and AJAX Control Toolkit enhanced user navigation.
+* Moved TreeView to top by Log Source label and utilized AJAX to show/hide tree.
+* Added basic search feature.
+* Added keyword search feature.
+* Added paging navigation to top of the grid.
+* Removed expand/contracting of folder by clicking on the name. Must use +/- icons
+  since there is a known issue with TreeViews embedded in CollabsiblePanel.
+* Changed overall color scheme to be less "dingy."
+* Added logo. Any donations of a better looking logo/scheme are greatly appreciated. 8^D
+
+v0.7
+* Extended source tree to allow custom icons.
+* Restricted log files to allow certain extensions. Extensions are configurable via web.config.
+* Moved source tree as a collapsable sidebar.
+* Changed layout structure to accomodate CSS better.
+* Added log name to top display for easier reference of log being displayed.
+* Added auto-refresh feature to refresh log entries automatically.
+
+v0.8
+* Converted NewLine characters to <br/> tags for proper viewing in the web environment.
+* Updated interface colors/icons for a "lighter" look.
+
+v0.9
+* Complete rewrite of the user interface to make better use of AJAX, colors, and web page real estate. TreeView issue in IE has been resolved.

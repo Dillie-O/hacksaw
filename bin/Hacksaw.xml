@@ -1,0 +1,1041 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Hacksaw
+</name>
+</assembly>
+<members>
+<member name="F:Hacksaw.TreeViewDataAccess.TreeViewData.Nodes">
+	<summary>
+ Array of TreeNodeData objects representing the root nodes in a TreeView.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Hacksaw.TreeViewDataAccess.TreeViewData.#ctor(System.Web.UI.WebControls.TreeView)">
+	<summary>
+    Creates new instance of the TreeViewData structure based from the specified TreeView.
+ </summary>
+	<param name="SourceTree">TreeView to build the TreeViewData instance from.</param>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	02/06/2007	Created
+ </history>
+</member><member name="M:Hacksaw.TreeViewDataAccess.TreeViewData.PopulateTree(System.Web.UI.WebControls.TreeView)">
+	<summary>
+    Populates the specified TreeView with the current TreeViewData instance.
+ </summary>
+	<param name="SourceTree">TreeView instance to populate.</param>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	02/06/2007	Created
+ </history>
+</member><member name="T:Hacksaw.TreeViewDataAccess.TreeViewData">
+	<summary>
+    TreeViewData structure represents the root node collection of a TreeView and provides the PopulateTreeView 
+    function to add these nodes to a specified TreeView instance.
+ </summary>
+	<remarks>This class is serializable.</remarks>
+	<history>
+ 	[Sean Patterson]	02/06/2007	Created
+ </history>
+</member><member name="F:Hacksaw.TreeViewDataAccess.TreeNodeData.Text">
+	<summary>String representing the Text property of the TreeNode.</summary>
+</member><member name="F:Hacksaw.TreeViewDataAccess.TreeNodeData.Value">
+	<summary>String representing the Value property of the TreeNode.</summary>
+</member><member name="F:Hacksaw.TreeViewDataAccess.TreeNodeData.ImageURL">
+	<summary>URL representing the icon file displayed next to the TreeNode.</summary>
+</member><member name="F:Hacksaw.TreeViewDataAccess.TreeNodeData.Checked">
+	<summary>Boolean representing the Checked state of the TreeNode.</summary>
+</member><member name="F:Hacksaw.TreeViewDataAccess.TreeNodeData.ChildNodes">
+	<summary>Array of TreeNodeData objects representing the root nodes in a TreeView.</summary>
+</member><member name="M:Hacksaw.TreeViewDataAccess.TreeNodeData.#ctor(System.Web.UI.WebControls.TreeNode)">
+	<summary>
+    Creates new instance of the TreeNodeData structure based on the specified TreeNode.
+ </summary>
+	<param name="SourceNode">TreeNode to build the TreeNodeData instance from.</param>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	02/06/2007	Created
+ </history>
+</member><member name="M:Hacksaw.TreeViewDataAccess.TreeNodeData.ToTreeNode">
+	<summary>
+    Returns as TreeNode built from the instance of the TreeNodeData object.
+ </summary>
+	<returns>TreeNode object containing data.</returns>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	02/06/2007	Created
+ </history>
+</member><member name="T:Hacksaw.TreeViewDataAccess.TreeNodeData">
+	<summary>
+    TreeNodeData structure represents a TreeNode and provides the ToTreeNode function to convert the instance to 
+    a TreeNode object.
+ </summary>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	02/06/2007	Created
+ </history>
+</member><member name="M:Hacksaw.TreeViewDataAccess.LoadTreeViewData(System.Web.UI.WebControls.TreeView,System.String)">
+	<summary>
+    Populates the specified TreeView from the serialized TreeViewData structure file specified.
+ </summary>
+	<param name="DestinationTree">TreeView instance to populate.</param>
+	<param name="TreeDataPath">Path to XML file to deserialize TreeView data.</param>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	02/06/2007	Created
+ </history>
+</member><member name="M:Hacksaw.TreeViewDataAccess.SaveTreeViewData(System.Web.UI.WebControls.TreeView,System.String)">
+	<summary>
+    Saves the specified TreeView in serialized TreeViewData structure file specified.
+ </summary>
+	<param name="SourceTree">TreeView instance to save.</param>
+	<param name="DestinationFilePath">Path to XML file to serialize TreeView data.</param>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	02/06/2007	Created
+ </history>
+</member><member name="T:Hacksaw.TreeViewDataAccess">
+	<summary>
+    The TreeViewDataAccess class allows the nodes within a TreeView to be serialized to XML for later retrevial. 
+    Many thanks to Tom John's article over at CodeProject (http://www.codeproject.com/vb/net/TreeViewDataAccess.asp)
+    for the initial code used in building this app. I've only modified it a bit to make it web component compatible
+    to  serve HackSaw's needs.
+ </summary>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	02/06/2007	Created
+ </history>
+</member><member name="F:Hacksaw.ManageLogSources.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.ManageLogSources.hypMain">
+	<summary>
+hypMain control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.ManageLogSources.tvLogSources">
+	<summary>
+tvLogSources control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.ManageLogSources.btnDeleteNode">
+	<summary>
+btnDeleteNode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.ManageLogSources.btnMoveNodeUp">
+	<summary>
+btnMoveNodeUp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.ManageLogSources.btnMoveNodeDown">
+	<summary>
+btnMoveNodeDown control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.ManageLogSources.btnSaveTree">
+	<summary>
+btnSaveTree control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.ManageLogSources.btnReloadTree">
+	<summary>
+btnReloadTree control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.ManageLogSources.txtSelectedNodeName">
+	<summary>
+txtSelectedNodeName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.ManageLogSources.txtSelectedNodePath">
+	<summary>
+txtSelectedNodePath control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.ManageLogSources.txtSelectedNodeIcon">
+	<summary>
+txtSelectedNodeIcon control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.ManageLogSources.btnUpdateNode">
+	<summary>
+btnUpdateNode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.ManageLogSources.txtNewLogName">
+	<summary>
+txtNewLogName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.ManageLogSources.txtNewLogPath">
+	<summary>
+txtNewLogPath control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.ManageLogSources.txtNewLogIcon">
+	<summary>
+txtNewLogIcon control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.ManageLogSources.btnAddLogNode">
+	<summary>
+btnAddLogNode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.ManageLogSources.txtNewCategoryName">
+	<summary>
+txtNewCategoryName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.ManageLogSources.txtNewCategoryIcon">
+	<summary>
+txtNewCategoryIcon control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.ManageLogSources.btnAddLogCategory">
+	<summary>
+btnAddLogCategory control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.ManageLogSources.lblStatus">
+	<summary>
+lblStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.ManageLogSources.lblError">
+	<summary>
+lblError control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.tsmAjax">
+	<summary>
+tsmAjax control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.lblVersionInformation">
+	<summary>
+lblVersionInformation control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.pnlLog">
+	<summary>
+pnlLog control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.imbShowLogs">
+	<summary>
+imbShowLogs control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.txtLogName">
+	<summary>
+txtLogName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.imbLoadLog">
+	<summary>
+imbLoadLog control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.imbManageLogs">
+	<summary>
+imbManageLogs control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.tweLogName">
+	<summary>
+tweLogName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.valLogNameRequired">
+	<summary>
+valLogNameRequired control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.pnlLogSources">
+	<summary>
+pnlLogSources control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.pnlLogSourcesHeader">
+	<summary>
+pnlLogSourcesHeader control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.imbPanelClose">
+	<summary>
+imbPanelClose control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.imbPanelManageLogs">
+	<summary>
+imbPanelManageLogs control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.pnlLogSourcesContent">
+	<summary>
+pnlLogSourcesContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.tvLogSources">
+	<summary>
+tvLogSources control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.pnlSearch">
+	<summary>
+pnlSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.MyAccordion">
+	<summary>
+MyAccordion control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.acpBasicSearch">
+	<summary>
+acpBasicSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.ddlBasicSearchColumn">
+	<summary>
+ddlBasicSearchColumn control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.ddlBasicSearchOperator">
+	<summary>
+ddlBasicSearchOperator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.txtBasicSearchCriteria">
+	<summary>
+txtBasicSearchCriteria control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.btnStartBasicSearch">
+	<summary>
+btnStartBasicSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.btnClearBasicSearch">
+	<summary>
+btnClearBasicSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.acpKeywordSearch">
+	<summary>
+acpKeywordSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.ddlKeywordSearchColumn">
+	<summary>
+ddlKeywordSearchColumn control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.txtKeywordSearchCriteria">
+	<summary>
+txtKeywordSearchCriteria control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.btnStartKeywordSearch">
+	<summary>
+btnStartKeywordSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.btnClearKeywordSearch">
+	<summary>
+btnClearKeywordSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.acpAdvancedSearch">
+	<summary>
+acpAdvancedSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.txtGridFilter">
+	<summary>
+txtGridFilter control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.btnStartAdvancedSearch">
+	<summary>
+btnStartAdvancedSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.btnClearAdvancedSearch">
+	<summary>
+btnClearAdvancedSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.updEvents">
+	<summary>
+updEvents control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.pnlGridOptions">
+	<summary>
+pnlGridOptions control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.chkUsePaging">
+	<summary>
+chkUsePaging control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.txtEventsPerPage">
+	<summary>
+txtEventsPerPage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.btnApplyOptions">
+	<summary>
+btnApplyOptions control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.timUpdate">
+	<summary>
+timUpdate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.rblRefreshRate">
+	<summary>
+rblRefreshRate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.btnRefreshGrid">
+	<summary>
+btnRefreshGrid control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.lblLastRefresh">
+	<summary>
+lblLastRefresh control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.gvEvents">
+	<summary>
+gvEvents control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.lblNoEntries">
+	<summary>
+lblNoEntries control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Hacksaw.Main.lblError">
+	<summary>
+lblError control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:Hacksaw.HacksawTables.LogEventDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Hacksaw.HacksawTables.LogEventRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Hacksaw.HacksawTables.LogEventRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Hacksaw.HacksawTables">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="M:Hacksaw.ManageLogSources.BindLogSources">
+	<summary>
+    Retrieves log sources and binds to the TreeView for selection.
+ </summary>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	02/06/2007	Created
+ </history>
+</member><member name="M:Hacksaw.ManageLogSources.AddLogFolder(System.Object,System.EventArgs)">
+	<summary>
+    Adds a folder node to the TreeView.
+ </summary>
+	<param name="sender">Add Log Folder Button Click Event.</param>
+	<param name="e">Button Click Event Arguments</param>
+	<remarks>Folder nodes do not link to log files, they serve for grouping purposes.</remarks>
+	<history>
+ 	[Sean Patterson]	02/06/2007	Created
+ </history>
+</member><member name="M:Hacksaw.ManageLogSources.AddLogNode(System.Object,System.EventArgs)">
+	<summary>
+    Adds a log node to the TreeView
+ </summary>
+	<param name="sender">Add Log Node Button Click Event</param>
+	<param name="e">Button Click Event Arguments</param>
+	<remarks>Log nodes contain the path to the XML file to view.</remarks>
+	<history>
+ 	[Sean Patterson]	02/06/2007	Created
+ </history>
+</member><member name="M:Hacksaw.ManageLogSources.SaveTree(System.Object,System.EventArgs)">
+	<summary>
+    Saves the log sources TreeView to an XML file.
+ </summary>
+	<param name="sender">Save Sources Button Click Event</param>
+	<param name="e">Button Click Event Arguments</param>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	02/07/2007	Created
+ </history>
+</member><member name="M:Hacksaw.ManageLogSources.ReloadTree(System.Object,System.EventArgs)">
+	<summary>
+    Loads log sources XML file into the TreeView.
+ </summary>
+	<param name="sender">Reload Sources Button Click Event</param>
+	<param name="e">Button Click Event Arguments</param>
+	<remarks></remarks>
+	<history>
+    Sean Patterson   02/07/2007   [Created]
+ </history>
+</member><member name="M:Hacksaw.ManageLogSources.ProcessNode(System.Object,System.EventArgs)">
+	<summary>
+    Processes the appropriate action when a Node in the TreeView is clicked.
+ </summary>
+	<param name="sender">TreeView SelectedNodeChanged Event</param>
+	<param name="e">SelectedNodeChanged Even Arguments</param>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	02/07/2007	Created
+ </history>
+</member><member name="M:Hacksaw.ManageLogSources.DeleteNode(System.Object,System.EventArgs)">
+	<summary>
+    Deletes the node selected.
+ </summary>
+	<param name="sender">Delete Button Click Event</param>
+	<param name="e">Button Click Event Arguments</param>
+	<remarks>If a folder node is deleted, all child log nodes will automatically be deleted.</remarks>
+	<history>
+ 	[Sean Patterson]	02/07/2007	Created
+ </history>
+</member><member name="M:Hacksaw.ManageLogSources.UpdateNode(System.Object,System.EventArgs)">
+	<summary>
+    Updates selected node to the new name/path specified by the user.
+ </summary>
+	<param name="sender">Update Button Click Event</param>
+	<param name="e">Button Click Event Arguments</param>
+	<remarks></remarks>
+	<history>
+    Sean Patterson   02/07/2007   [Created]
+ </history>
+</member><member name="M:Hacksaw.ManageLogSources.MoveNodeUp(System.Object,System.EventArgs)">
+	<summary>
+    Moves the selected node up in the tree.
+ </summary>
+	<param name="sender">Move Node Up Button Click Event.</param>
+	<param name="e">Button Click Event Arguments</param>
+	<remarks>
+    A node cannot move up in the heirarchy of the tree. It can only move up amongst the child nodes it is a part
+    of.
+ </remarks>
+	<history>
+ 	[Sean Patterson]	02/16/2007	Created
+ </history>
+</member><member name="M:Hacksaw.ManageLogSources.MoveNodeDown(System.Object,System.EventArgs)">
+	<summary>
+    Moves the selected node down in the tree.
+ </summary>
+	<param name="sender">Move Node Down Button Click Event.</param>
+	<param name="e">Button Click Event Arguments</param>
+	<remarks>
+    A node cannot move down in the heirarchy of the tree. It can only move up amongst the child nodes it is a 
+    part of.
+ </remarks>
+	<history>
+ 	[Sean Patterson]	02/16/2007	Created
+ </history>
+</member><member name="M:Hacksaw.ManageLogSources.ClearTextBoxes">
+	<summary>
+    Sets all TextBoxes Text parameter to blank.
+ </summary>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	02/16/2007	Created
+ </history>
+</member><member name="M:Hacksaw.ManageLogSources.ClearAllButSelectedTextBoxes">
+	<summary>
+    Sets all TextBoxes Text parameter to blank except for those relating to the selected node.
+ </summary>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	02/16/2007	Created
+ </history>
+</member><member name="M:Hacksaw.HackSawDAL.LoadLog(System.String)">
+	<summary>
+    Method loads data from file specified using log4j-events XML schema.
+ </summary>
+	<param name="LogPath">Full path of file to load.</param>
+	<returns>DataTable containing loaded data.</returns>
+	<remarks>
+    By default, log4j/log4net log files are appended in a "malformed" format since there is no root XML header 
+    or footer tags included. This method will stream the file in, apply the appropriate header/footer, and then 
+    pass this "properly formed" XML information to the DataSet for loading. The header and footer tags are 
+    located in seperate files to allow for future header changes without recompiling the application.
+ </remarks>
+</member><member name="M:Hacksaw.HackSawDAL.SaveLogTree(System.Web.UI.WebControls.TreeView)">
+	<summary>
+    Serializes the TreeView object specified into an XML file.
+ </summary>
+	<param name="SourceTree">TreeView to serialize.</param>
+	<remarks>
+    Method uses the TreeViewDataAccess class to facilitate translation of the TreeView into a serializable 
+    object. The XML file used for serialization is located in the configuration file (web.config).
+ </remarks>
+	<history>
+ 	[Sean Patterson]	02/06/2007	Created
+ </history>
+</member><member name="M:Hacksaw.HackSawDAL.LoadLogTree(System.Web.UI.WebControls.TreeView)">
+	<summary>
+    Deserializes the XML file specified in the configuration into the TreeView object specified.
+ </summary>
+	<param name="SourceTree">TreeView to deserialize into.</param>
+	<remarks>
+    Method uses the TreeViewDataAccess class to facilitate translation of the TreeView into a serializable 
+    object. The XML file used for deserialization is located in the configuration file (web.config).
+ </remarks>
+	<history>
+ 	[Sean Patterson]	02/06/2007	Created
+ </history>
+</member><member name="M:Hacksaw.HackSawDAL.IsLogFile(System.String,System.Collections.ArrayList)">
+	<summary>
+    Determines if the value specified contains a valid log file extension in its name.
+ </summary>
+	<param name="SourceValue">Value to evaluate.</param>
+	<returns>Boolean indicating if value contains a proper extension in it.</returns>
+	<remarks>Method uses the LogExtensions ArrayList in the user's session to compare against.</remarks>
+	<history>
+ 	[Sean Patterson]	04/24/2007	Created
+ </history>
+</member><member name="T:Hacksaw.HackSawDAL">
+	<summary>
+    This class serves as the data access layer for the HackSaw application. All processes involving loading data 
+    from a file or dataset function through this class.
+ </summary>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	01/12/2007	Created
+ </history>
+</member><member name="P:Hacksaw.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Hacksaw.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Hacksaw.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Hacksaw.Main.ShowLogSourcesPanel(System.Object,System.Web.UI.ImageClickEventArgs)">
+	<summary>
+    Displays the Log Sources box.
+ </summary>
+	<param name="sender">Show Logs ImageButton Click Event.</param>
+	<param name="e">ImageButton Click Event Arguements.</param>
+	<remarks></remarks>
+	<history>
+    Sean Patterson   4/24/2008   [Created]
+ </history>
+</member><member name="M:Hacksaw.Main.CloseSourcesPanel(System.Object,System.Web.UI.ImageClickEventArgs)">
+	<summary>
+    Hides the Log Sources box.
+ </summary>
+	<param name="sender">Close Panel ImageButton Click Event.</param>
+	<param name="e">ImageButton Button Click Event Arguments.</param>
+	<remarks></remarks>
+	<history>
+    Sean Patterson   4/24/2008   [Created]
+ </history>
+</member><member name="M:Hacksaw.Main.BindLogSources">
+	<summary>
+    Retrieves log sources and binds to the TreeView for selection.
+ </summary>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	01/18/2007	Created
+ </history>
+</member><member name="M:Hacksaw.Main.BindLogFile">
+	<summary>
+    Loads log file stored in ViewState variable and binds to GridView for display. Display options stored in 
+    ViewState are applied to GridView.
+ </summary>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	01/18/2007	Created
+ </history>
+</member><member name="M:Hacksaw.Main.ChangeGridPage(System.Object,System.Web.UI.WebControls.GridViewPageEventArgs)">
+	<summary>
+    Changes GridView page to page specified.
+ </summary>
+	<param name="sender">GridView Page Changed Event</param>
+	<param name="e">Page Changed Event Arguments</param>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	01/18/2007	Created
+ </history>
+</member><member name="M:Hacksaw.Main.ChangeGridSort(System.Object,System.Web.UI.WebControls.GridViewSortEventArgs)">
+	<summary>
+    Changes GridView sort to column specified.
+ </summary>
+	<param name="sender">GridView Sorting Event</param>
+	<param name="e">Sorting Event Arguments</param>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	01/18/2007	Created
+ </history>
+</member><member name="M:Hacksaw.Main.FormatGrid(System.Object,System.Web.UI.WebControls.GridViewRowEventArgs)">
+	<summary>
+    Formats row data in GridView
+ </summary>
+	<param name="sender">GridView RowDataBound Event</param>
+	<param name="e">RowDataBound Event Arguments</param>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	01/18/2007	Created
+ </history>
+</member><member name="M:Hacksaw.Main.ApplyOptions(System.Object,System.EventArgs)">
+	<summary>
+    Stores settings in ViewState variables and applies changes to GridView.
+ </summary>
+	<param name="sender">Apply Optios Button Click Event</param>
+	<param name="e">Button Click Event Arguments</param>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	01/18/2007	Created
+ </history>
+</member><member name="M:Hacksaw.Main.RefreshGridView(System.Object,System.EventArgs)">
+	<summary>
+    Refreshes the GridView without resetting the sort/paging attributes.
+ </summary>
+	<param name="sender">Refresh Grid Button Click Event</param>
+	<param name="e">Button Click Event Arguments</param>
+	<remarks>Method redirects to the BindLogFile method.</remarks>
+</member><member name="M:Hacksaw.Main.ProcessNode(System.Object,System.EventArgs)">
+	<summary>
+    Processes the appropriate action when a Node in the TreeView is clicked.
+ </summary>
+	<param name="sender">TreeView SelectedNodeChanged Event</param>
+	<param name="e">SelectedNodeChanged Even Arguments</param>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	02/06/2007	Created
+ </history>
+</member><member name="M:Hacksaw.Main.ShowHideLogTree(System.Object,System.EventArgs)">
+	<summary>
+    Shows/Hides Log Sources TreeView based on current state.
+ </summary>
+	<param name="sender">Log Source Button Click Event</param>
+	<param name="e">Button Click Event Arguments</param>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	02/06/2007	Created
+ </history>
+</member><member name="M:Hacksaw.Main.StartAdvancedSearch(System.Object,System.EventArgs)">
+	<summary>
+    Applies the filter criteria specified to the grid view and refreshes the display.
+ </summary>
+	<param name="sender">Apply Filter Button Click Event.</param>
+	<param name="e">Button Click Event Arguments.</param>
+	<remarks>Method sets the GridFilter ViewState parameter and calls the BindLogFile method.</remarks>
+	<history>
+ 	[Sean Patterson]	02/15/2007	Created
+ </history>
+</member><member name="M:Hacksaw.Main.ClearAdvancedSearch(System.Object,System.EventArgs)">
+	<summary>
+    Clears the filter applied to the grid view and refreshes the display.
+ </summary>
+	<param name="sender">Clear Filter Button Click Event.</param>
+	<param name="e">Button Click Event Arguments.</param>
+	<remarks>Method resets the GridFilter ViewState parameter to blank and calls the BindLogFile method.</remarks>
+	<history>
+ 	[Sean Patterson]	02/15/2007	Created
+ </history>
+</member><member name="M:Hacksaw.Main.StartBasicSearch(System.Object,System.EventArgs)">
+	<summary>
+    Creates a grid view filter based on user basic search parameters and refreshes the display.
+ </summary>
+	<param name="sender">Basic Search Button Click.</param>
+	<param name="e">Button Click Event Arguments.</param>
+	<remarks>Method sets the GridFilter ViewState parameter and calls the BindLogFile method.</remarks>
+	<history>
+ 	[Sean Patterson]	03/09/2007	Created
+ </history>
+</member><member name="M:Hacksaw.Main.ClearBasicSearch(System.Object,System.EventArgs)">
+	<summary>
+    Clears the filter applied to the basic search and refreshes the display.
+ </summary>
+	<param name="sender">Clear Basic Search Button Click.</param>
+	<param name="e">Button Click Event Arguments.</param>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	03/09/2007	Created
+ </history>
+</member><member name="M:Hacksaw.Main.StartKeywordSearch(System.Object,System.EventArgs)">
+	<summary>
+    Creates a grid view filter based on user keyword search parameters and refreshes the display.
+ </summary>
+	<param name="sender">Keyword Search Button Click.</param>
+	<param name="e">Button Click Event Arguments.</param>
+	<remarks>Method sets the GridFilter ViewState parameter and calls the BindLogFile method.</remarks>
+	<history>
+ 	[Sean Patterson]	03/17/2007	Created
+ </history>
+</member><member name="M:Hacksaw.Main.ClearKeywordSearch(System.Object,System.EventArgs)">
+	<summary>
+    Clears the filter applied to the keyword search and refreshes the display.
+ </summary>
+	<param name="sender">Clear Keyword Search Button Click.</param>
+	<param name="e">Button Click Event Arguments.</param>
+	<remarks></remarks>
+	<history>
+ 	[Sean Patterson]	03/12/2007	Created
+ </history>
+</member><member name="M:Hacksaw.Main.TickUpdateGrid(System.Object,System.EventArgs)">
+	<summary>
+    Calls the BindLogFile method to refresh the GridView.
+ </summary>
+	<param name="sender">Timer Tick Event</param>
+	<param name="e">Tick Event Arguments</param>
+	<remarks>
+    Interval of update is controlled based on ViewState information and user options.
+ </remarks>
+	<history>
+ 	[Sean Patterson]	04/27/2007	Created
+ </history>
+</member><member name="M:Hacksaw.Main.ManualLoadLog(System.Object,System.EventArgs)">
+	<summary>
+    Loads the log files specified for viewing.
+ </summary>
+	<param name="sender">Load Log ImageButton Click Event.</param>
+	<param name="e">ImageButton Click Event Arguments.</param>
+	<remarks>
+    This method runs when the user does not use the saved log sources TreeView and types in the log source instead.
+ </remarks>
+	<history>
+    Sean Patterson   4/26/2008   [Created]
+ </history>
+</member><member name="M:Hacksaw.Main.ManageLogs(System.Object,System.Web.UI.ImageClickEventArgs)">
+	<summary>
+    Redirects the user to the Manage Log Sources page.
+ </summary>
+	<param name="sender">Manage Log Sources ImageButton Click Event.</param>
+	<param name="e">ImageButton Click Event Arguments.</param>
+	<remarks></remarks>
+	<history>
+    Sean Patterson   4/26/2008   [Created]
+ </history>
+</member>
+</members>
+</doc>

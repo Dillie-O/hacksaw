@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<TreeViewData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <Nodes>
+      <TreeNodeData>
+         <Text>Log Sources</Text>
+         <Value>Log Sources</Value>
+         <Checked>false</Checked>
+         <ChildNodes>
+            <TreeNodeData>
+               <Text>Sample Logs</Text>
+               <Value>Sample Logs</Value>
+               <Checked>false</Checked>
+               <ChildNodes>
+                  <TreeNodeData>
+                     <Text>Sample Log File</Text>
+                     <Value>C:\Projects\Dillie-O Digital\HackSaw\SampleLog.xml</Value>
+                     <Checked>false</Checked>
+                  </TreeNodeData>
+               </ChildNodes>
+            </TreeNodeData>
+         </ChildNodes>
+      </TreeNodeData>
+   </Nodes>
+</TreeViewData>

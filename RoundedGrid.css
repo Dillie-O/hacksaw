@@ -1,0 +1,68 @@
+﻿div.roundedgrid
+{
+    clear:both;
+    max-width:2400px;
+    width:100%;
+}
+
+div.roundedgrid div.top-outer
+{
+    background:url(images/RoundGridTopLeft.png) no-repeat left bottom;
+    padding:0px;
+    width:100%;
+}
+
+div.roundedgrid div.top-outer div.top-inner
+{
+    background:url(images/RoundGridTopRight.png) no-repeat right bottom;
+    margin-left:9px;
+}
+
+div.roundedgrid div.top-outer div.top-inner div.top
+{
+    background:url(images/RoundGridTop.png) repeat;
+    height:23px;
+    margin-right:9px;
+    font-size:.01em;
+}
+
+div.roundedgrid div.mid-outer
+{
+    background:url(images/RoundGridLeft.png) left repeat-y;
+    clear:both;
+    width:100%;
+}
+
+div.roundedgrid div.mid-outer div.mid-inner
+{
+    background:url(images/RoundGridRight.png) right repeat-y;
+    margin-left:9px;    
+}
+
+div.roundedgrid div.mid-outer div.mid-inner div.mid
+{
+	background-color:#ffffff;
+    margin-right:9px;
+}
+
+div.roundedgrid div.bottom-outer
+{
+    background:url(images/RoundGridBottomLeft.png) no-repeat left top;
+    clear:both;
+    padding:0px;
+    width:100%;
+}
+
+div.roundedgrid div.bottom-outer div.bottom-inner
+{
+    background:url(images/RoundGridBottomRight.png) no-repeat right top;
+    margin-left:8px;
+}
+
+div.roundedgrid div.bottom-outer div.bottom-inner div.bottom
+{
+    background:url(images/RoundGridBottom.png) repeat;
+    height:9px;
+    margin-right:8px;
+    font-size:.01em;
+}

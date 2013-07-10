@@ -1,0 +1,210 @@
+﻿/* Override HTML Elements */
+body 
+{
+   margin: 0px;
+   background-color: White;
+   text-align: center;
+}
+
+/* Specific Layout Elements */
+.LogSourcePanel
+{
+   position:absolute;
+   top: -15px; 
+   left: 10px; 
+   z-index:20;
+   width: 250px;
+   height: 300px;    
+   padding: 5px;
+}
+
+.LogSourceHeader
+{
+   width:100%;
+   height:21px;
+   background-color: #FFFACD;
+   color:Black;
+   text-align:center;
+   font-weight:bold;
+   border-left-style: solid;
+   border-left-width: 2px;
+   border-left-color: Black;
+   border-right-style: solid;
+   border-right-width: 2px;
+   border-right-color: Black;
+   border-top-style: solid;
+   border-top-width: 2px;
+   border-top-color: Black;
+}
+
+.LogSourceContent
+{
+   width: 100%;
+   Height: 250px;
+   background-color: #F0F0F0;
+   color: #2C3393;
+   border-style: solid;
+   border-color: Black;
+   border-width: 2px;
+   overflow: scroll;
+}
+
+.AccordionHeader
+{
+   color: black;
+   background-color: #FFFACD;
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+   cursor: pointer;
+   padding-left: 5px;
+   text-align: center;
+   border-left-style: solid;
+   border-left-width: 2px;
+   border-left-color: Black;
+   border-right-style: solid;
+   border-right-width: 2px;
+   border-right-color: Black;
+   border-top-style: solid;
+   border-top-width: 2px;
+   border-top-color: Black;
+}
+
+.AccordionContent
+{
+   background-color: #F0F0F0;
+   color: #2C3393;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 10px;
+   padding-right: 10px;
+   text-align: center;
+   border-left-style: solid;
+   border-left-width: 2px;
+   border-left-color: Black;
+   border-right-style: solid;
+   border-right-width: 2px;
+   border-right-color: Black;
+   border-bottom-style: solid;
+   border-bottom-width: 2px;
+   border-bottom-color: Black;
+}
+
+.DebugStatus 
+{
+	font-weight: bold;
+	color: #000000;
+}
+
+.InfoStatus {
+	font-weight: bold;
+	color: #008000;
+}
+
+.WarnStatus {
+	color: #FF9900;
+	font-weight: bold;
+}
+
+.ErrorStatus {
+	font-weight: bold;
+	color: #800080;
+}
+
+.FatalStatus {
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.CloseImage
+{
+   position: relative;
+   left: 80px;
+   top: 2px;
+}
+
+.PanelManageLogsImage
+{
+   position: relative;
+   left: 30px;
+   top: 2px;
+}
+
+.LogNameTextBox
+{
+   font-family: Verdana;
+   font-size: 14px;
+   vertical-align:middle;
+   height: 20px;
+}
+
+.TextWatermark
+{
+   font-family: Verdana;
+   font-size: 14px;
+   color: #C0C0C0;
+   height: 20px;
+   vertical-align:middle;
+}
+
+.MainLink
+{
+   font-weight: bold;
+   text-decoration: none;
+}
+
+.RefreshLabel
+{
+   font-family: Arial;
+   font-size: 8pt;
+   cursor: pointer;
+}
+
+/* Formatting Elements */
+
+.align-center
+{
+   text-align: center;
+}
+
+.align-left
+{
+   text-align: left;
+}
+
+.align-right
+{
+   text-align: right;
+}
+
+.CenterMainTable
+{
+   width: 95%;
+   text-align: center;
+}
+
+.MiniText
+{
+   font-family: Arial;
+   font-size: 8pt;
+}
+
+.LogSourceBox
+{
+   background-color: #FFFFFF;
+}
+
+.float-right
+{
+   float:right;
+}
+
+.float-left
+{
+   float:left;
+}
+
+.vertical-middle
+{
+   vertical-align: middle;
+}

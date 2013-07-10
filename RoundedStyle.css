@@ -1,0 +1,89 @@
+﻿div.rounded
+{
+    clear:both;
+    max-width:2400px;
+    margin:5px auto;
+    width:95%;
+}
+
+div.rounded div.top
+{
+    background:url(images/RoundTopLeft.png) no-repeat bottom left;
+    padding:0px;
+    width:100%;
+}
+
+div.rounded div.top div.right
+{
+    background:url(images/RoundTopRight.png) no-repeat bottom right;
+    height:15px;
+    margin-left:15px;
+}
+
+div.rounded div.middle
+{
+    background:url(images/RoundLeft.png) repeat-y left;
+    clear:both;
+    width:100%;
+}
+
+div.rounded div.middle div.right
+{
+    background:url(images/RoundRight.png) repeat-y right;
+    margin-left:9px;
+}
+
+div.rounded div.middle div.right div.content
+{
+    background:url(images/RoundBackground.png) repeat top left;
+    color:#fff;
+    font-family:"Trebuchet MS", Calibri, Tahoma, sans-serif;
+    font-size:1.0em;
+    line-height:1.3em;
+    margin-right:9px;
+    padding:0px 7px;
+    text-align:justify;
+}
+
+div.rounded div.middle div.right div.content p
+{
+    margin:0px;
+    padding-top:15px;
+}
+
+div.rounded div.middle div.right div.content .CenterContent
+{
+    margin:0px;
+    padding-top:15px;
+}
+
+div.rounded div.middle div.right div.content .RightContent
+{
+    margin:0px;
+    padding-top:15px;
+    text-align: right;
+}
+
+div.rounded div.middle div.right div.content h2
+{
+    color:#0f2;
+    font-size:1.75em;
+    font-weight:bold;
+    margin:0px;
+    padding:7px 0px;
+}
+
+div.rounded div.bottom
+{
+    background:url(images/RoundBottomLeft.png) no-repeat top left;
+    clear:both;
+    padding:0px;
+    width:100%;
+}
+
+div.rounded div.bottom div.right
+{
+    background:url(images/RoundBottomRight.png) no-repeat top right;
+    height:15px;
+    margin-left:15px;
+}

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HacksawTables" targetNamespace="http://tempuri.org/HacksawTables.xsd" xmlns:mstns="http://tempuri.org/HacksawTables.xsd" xmlns="http://tempuri.org/HacksawTables.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HacksawTables" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="HacksawTables" msprop:Generator_UserDSName="HacksawTables" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LogEvent" msprop:Generator_UserTableName="LogEvent" msprop:Generator_RowDeletedName="LogEventRowDeleted" msprop:Generator_TableClassName="LogEventDataTable" msprop:Generator_RowChangedName="LogEventRowChanged" msprop:Generator_RowClassName="LogEventRow" msprop:Generator_RowChangingName="LogEventRowChanging" msprop:Generator_RowEvArgName="LogEventRowChangeEvent" msprop:Generator_RowEvHandlerName="LogEventRowChangeEventHandler" msprop:Generator_TablePropName="LogEvent" msprop:Generator_TableVarName="tableLogEvent" msprop:Generator_RowDeletingName="LogEventRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Logger" msprop:Generator_UserColumnName="Logger" msprop:Generator_ColumnPropNameInRow="Logger" msprop:Generator_ColumnVarNameInTable="columnLogger" msprop:Generator_ColumnPropNameInTable="LoggerColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Timestamp" msprop:Generator_UserColumnName="Timestamp" msprop:Generator_ColumnPropNameInRow="Timestamp" msprop:Generator_ColumnVarNameInTable="columnTimestamp" msprop:Generator_ColumnPropNameInTable="TimestampColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Level" msprop:Generator_UserColumnName="Level" msprop:Generator_ColumnPropNameInRow="Level" msprop:Generator_ColumnVarNameInTable="columnLevel" msprop:Generator_ColumnPropNameInTable="LevelColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Thread" msprop:Generator_UserColumnName="Thread" msprop:Generator_ColumnPropNameInRow="Thread" msprop:Generator_ColumnVarNameInTable="columnThread" msprop:Generator_ColumnPropNameInTable="ThreadColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Exception" msprop:Generator_UserColumnName="Exception" msprop:Generator_ColumnPropNameInRow="Exception" msprop:Generator_ColumnVarNameInTable="columnException" msprop:Generator_ColumnPropNameInTable="ExceptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Message" msprop:Generator_UserColumnName="Message" msprop:Generator_ColumnPropNameInRow="Message" msprop:Generator_ColumnVarNameInTable="columnMessage" msprop:Generator_ColumnPropNameInTable="MessageColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

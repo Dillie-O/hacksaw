@@ -1,0 +1,2 @@
+<?xml version="1.0" ?>
+<log4j:events version="1.2" xmlns:log4j="http://logging.apache.org/log4j/schemas/log4j-events-1.2">

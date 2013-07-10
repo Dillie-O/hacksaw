@@ -1,0 +1,2 @@
+<?xml version="1.0" ?>
+<log4net:events version="1.2" xmlns:log4net="http://logging.apache.org/log4net/schemas/log4net-events-1.2">

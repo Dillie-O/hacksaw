@@ -1,0 +1,10 @@
+C:\Projects\Dillie-O Digital\Hacksaw\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Dillie-O Digital\Hacksaw\obj\Debug\Hacksaw.Resources.resources
+C:\Projects\Dillie-O Digital\Hacksaw\obj\Debug\Hacksaw.vbproj.GenerateResource.Cache
+C:\Projects\Dillie-O Digital\Hacksaw\bin\Hacksaw.dll
+C:\Projects\Dillie-O Digital\Hacksaw\bin\Hacksaw.pdb
+C:\Projects\Dillie-O Digital\Hacksaw\bin\Hacksaw.xml
+C:\Projects\Dillie-O Digital\Hacksaw\bin\AjaxControlToolkit.dll
+C:\Projects\Dillie-O Digital\Hacksaw\obj\Debug\Hacksaw.dll
+C:\Projects\Dillie-O Digital\Hacksaw\obj\Debug\Hacksaw.xml
+C:\Projects\Dillie-O Digital\Hacksaw\obj\Debug\Hacksaw.pdb
